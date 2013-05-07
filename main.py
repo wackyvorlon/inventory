@@ -1,9 +1,9 @@
-#!/usr/bin/env python
+
 
 from Tkinter import *
 
 
-class App(object):
+class App:
 	"""A simple inventory app."""
 	def __init__(self, arg):
 		super(App, self).__init__()
@@ -18,10 +18,10 @@ class App(object):
         self.hi_there = Button(frame, text="Hello", command=self.say_hi)
         self.hi_there.pack(side=LEFT)
 
-        def say_hi(self):
-        	print "Hello, world!"
+    def say_hi(self):
+    	print "Hello, world!"
 
-		
+
 root = Tk()
 
 app = App(root)
